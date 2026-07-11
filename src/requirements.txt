@@ -1,13 +1,16 @@
-Flask>=3.1.0                  # Stable and widely used, works with Python 3.12
-jinja2<3.1                    # Avoids import error with 'escape'
-itsdangerous<2.1             # Prevents JSON import error with Flask 1.x
-Werkzeug>=3.1.0                 # Ensures compatibility with Flask 1.x
+# Core Web Framework
+Flask>=3.1.3
+Werkzeug>=3.1.8
 
-py-cpuinfo==9.0.0            # System info
-psutil==5.9.8                # CPU/mem stats for monitoring
-gunicorn==21.2.0             # For production deployment
+# Core Dependencies
+Jinja2>=3.1.5
+MarkupSafe>=3.0.0
+ItsDangerous>=2.2.0
+Click>=8.1.7
 
-black==24.3.0                # Code formatter
-flake8==7.0.0                # Linter
-pytest==8.1.1                # Unit test framework
+# Testing & Code Coverage (Added for SonarQube)
+pytest>=8.0.0
+coverage>=7.4.0
 
+# Recommended Production Server
+gunicorn>=23.0.0
