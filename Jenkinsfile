@@ -12,7 +12,7 @@ pipeline {
          stage('Installing Dependencies') {
             steps {
                dir('src') {
-                  sh "apt-get install pythom3.12-venv -y" 
+                  sh "sudo apt-get install python3.12-venv -y" 
                   sh "python3 -m venv venv"
                   sh "source venv/bin/activate"
                   sh "pip install requirements.txt"
