@@ -12,11 +12,13 @@ pipeline {
          stage('Installing Dependencies') {
             steps {
                dir('src') {
+                   script {
                   sh "sudo apt-get install python3.12-venv -y" 
                   sh "python3 -m venv venv"
                   sh "source venv/bin/activate"
                   sh "pip install requirements.txt"
                   }
+               }
             }
         }
          stage('Sonar Qube Analysis') {
