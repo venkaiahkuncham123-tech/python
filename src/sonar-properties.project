@@ -1,0 +1,4 @@
+sonar.projectKey=python-project
+sonar.projectName=python-project
+sonar.sources=src/
+sonar.exclusions=**/venv/**, **/site-packages/**, **/build/**, **/dist/**
