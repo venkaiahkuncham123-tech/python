@@ -34,4 +34,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            sh 'echo Learning is fun'
+        }
+    }
 }
