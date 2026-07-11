@@ -22,9 +22,8 @@ pipeline {
                        
                        // 3. Combine activation and pip install using standard multi-line string (''' or "") separated by &&
                        sh '''
-                           source venv/bin/activate
-                           pip install --upgrade pip
-                           pip install -r requirements.txt
+                           ./venv/bin/pip install --upgrade pip
+                           ./venv/bin/pip install -r requirements.txt
                        '''
                    }
                }
